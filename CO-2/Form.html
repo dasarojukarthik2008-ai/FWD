@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <h1 text-align="center" color="red">REGISTRATION FORM</h1>
+        <form action="success.html" method="get">
+            Name : <input type="text" name="usname" placeholder="Enter your name" autofocus required><br><br>
+            Password : <input type="password" name="pass" placeholder="Enter your password" autofocus required><br><br>
+            E-Mail : <input type="email" name="email" placeholder="email@domain.in" autofocus required><br><br>
+            Gender : <input type="radio" name="gender" value="male">Male
+                     <input type="radio" name="gender" value="female">Female
+                     <input type="radio" name="gender" value="others">Others
+            <br><br>
+            Course : <select name="Branch">
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>AI&DS</option>
+                <option>CSIT</option>
+            </select>
+            <br><br>
+            Skills : <br>
+            <input type="checkbox" name="skills">HTML <br>
+            <input type="checkbox" name="skills">Designing Circuits <br>
+            <input type="checkbox" name="skills">JAVA <br>
+            <input type="checkbox" name="skills">C <br>
+            <input type="checkbox" name="skills">C++ <br>
+            <input type="checkbox" name="skills">PYTHON <br>
+            Address : <textarea rows="5" cols="50"></textarea><br><br>
+            Mobile Number : <input type="tel" pattern="[0-9]{10}" maxlength="10"><br><br>
+            <input type="checkbox" value="terms">Terms and Conditions <br><br>
+            <button>Reset</button>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
