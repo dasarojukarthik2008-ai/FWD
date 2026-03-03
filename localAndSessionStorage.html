@@ -1,0 +1,41 @@
+<html>
+    <body>
+        <h2>Browser Storage Example</h2>
+        <input type="text" id="name" placeholder="Enter your name"><br><br>
+        <button onclick="saveLocal()">Save to localStorage</button>
+        <button onclick="showLocal()">Show localStorage</button>
+        <button onclick="removeLocal()">Remove localStorage</button>
+        <button onclick="saveSession()">Save to sessionStorage</button>
+        <button onclick="showSession()">Show sessionStorage</button>
+        <button onclick="clearSession()">Clear sessionStorage</button>
+        <p id="output"></p>
+        <script>
+            function saveLocal() {
+                let value = document.getElementById("name").value;
+                localStorage.setItem("username", value);
+                alert("Saved to localStorage");
+            }
+            function showLocal() {
+                let data = localStorage.getItem("username");
+                document.getElementById("output").innerText = "localStorage Value: " + data;
+            }
+            function removeLocal() {
+                localStorage.removeItem("username");
+                alert("localStorage item removed");
+            }
+            function saveSession() {
+                let value = document.getElementById("name").value;
+                sessionStorage.setItem("username", value);
+                alert("Saved to sessionStorage");
+            }
+            function showSession() {
+                let data = sessionStorage.getItem("username");
+                document.getElementById("output").innerText = "localStorage Value: " + data;
+            }
+            function clearSession() {
+                sessionStorage.removeItem("username");
+                alert("sesstionStorage cleared");
+            }
+        </script>
+    </body>
+</html>
